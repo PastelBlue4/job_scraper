@@ -12,7 +12,5 @@ def extract_wwr_jobs(keyword):
     else:
         soup = BeautifulSoup(response.text, "html.parser")
 
-        print(soup.prettify())
-
-        # jobs = soup.find_all("section", class_="jobs")
-        # print(len(jobs))
+        jobs = soup.find_all("section", class_="jobs")
+        print(len(jobs))
